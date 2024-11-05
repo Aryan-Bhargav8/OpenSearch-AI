@@ -52,18 +52,25 @@ To set up the backend:
    ```
 
 2. Create a virtual environment and install dependencies:
+   - for mac/linux :
    ```
    python3 -m venv venv
    source venv/bin/activate
    pip install -r requirements.txt
    ```
+   - for windows:
+   ```
+   python3 -m venv venv
+   source venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 
-3. Set the environment variables:
+4. Set the environment variables:
    ```
    cp env.example .env
    ```
 
-3. Run the FastAPI server:
+5. Run the FastAPI server:
    ```
    uvicorn server:app --reload
    ```
